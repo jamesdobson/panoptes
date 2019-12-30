@@ -44,7 +44,7 @@ Get it like this:
 Set it like this:
 
 ```console
-jdobson@JDOBSON-MBP15 ~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver intervalSecs -float 30.0
-jdobson@JDOBSON-MBP15 ~ %
+~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver intervalSecs -float 30.0
+~ %
 ```
 
