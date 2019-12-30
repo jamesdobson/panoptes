@@ -8,9 +8,14 @@ final class SaverView: ScreenSaverView {
   
   private var prefs: UserDefaults? = nil
   
-  private var urlIndex: Int = 0
+  private static var viewCount: Int = 0
+
+  private var urlIndex: Int = {
+    SaverView.viewCount += 1
+    return SaverView.viewCount - 1
+  }()
   
-  private var urlArray: [String] = []
+  private var urlArray: [String] = []  
     
   // MARK: Outlets
   private var webView: WKWebView
