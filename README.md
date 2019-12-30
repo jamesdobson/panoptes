@@ -48,3 +48,7 @@ Set it like this:
 ~ %
 ```
 
+## License
+
+Licensed under the [MIT](https://github.com/jamesdobson/panoptes/blob/master/LICENSE) license.
+
