@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AFFBE1C223B847B900519529 /* WebScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFBE1C223B847B900519529 /* Panoptes.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Panoptes.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFBE1C923B847B900519529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFBE1CF23B84DC400519529 /* SaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,7 +30,7 @@
 		AFFBE1B823B847B800519529 = {
 			isa = PBXGroup;
 			children = (
-				AFFBE1C423B847B900519529 /* WebScreensaver */,
+				AFFBE1C423B847B900519529 /* Panoptes */,
 				AFFBE1C323B847B900519529 /* Products */,
 			);
 			indentWidth = 2;
@@ -40,18 +40,18 @@
 		AFFBE1C323B847B900519529 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFFBE1C223B847B900519529 /* WebScreensaver.saver */,
+				AFFBE1C223B847B900519529 /* Panoptes.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFFBE1C423B847B900519529 /* WebScreensaver */ = {
+		AFFBE1C423B847B900519529 /* Panoptes */ = {
 			isa = PBXGroup;
 			children = (
 				AFFBE1C923B847B900519529 /* Info.plist */,
 				AFFBE1CF23B84DC400519529 /* SaverView.swift */,
 			);
-			path = WebScreensaver;
+			path = Panoptes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,9 +67,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AFFBE1C123B847B900519529 /* WebScreensaver */ = {
+		AFFBE1C123B847B900519529 /* Panoptes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFFBE1CC23B847B900519529 /* Build configuration list for PBXNativeTarget "WebScreensaver" */;
+			buildConfigurationList = AFFBE1CC23B847B900519529 /* Build configuration list for PBXNativeTarget "Panoptes" */;
 			buildPhases = (
 				AFFBE1BD23B847B900519529 /* Headers */,
 				AFFBE1BE23B847B900519529 /* Sources */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = WebScreensaver;
-			productName = WebScreensaver;
-			productReference = AFFBE1C223B847B900519529 /* WebScreensaver.saver */;
+			name = Panoptes;
+			productName = Panoptes;
+			productReference = AFFBE1C223B847B900519529 /* Panoptes.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFFBE1BC23B847B900519529 /* Build configuration list for PBXProject "WebScreensaver" */;
+			buildConfigurationList = AFFBE1BC23B847B900519529 /* Build configuration list for PBXProject "Panoptes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFFBE1C123B847B900519529 /* WebScreensaver */,
+				AFFBE1C123B847B900519529 /* Panoptes */,
 			);
 		};
 /* End PBXProject section */
@@ -258,14 +258,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZA7XG7MLV7;
-				INFOPLIST_FILE = WebScreensaver/Info.plist;
+				INFOPLIST_FILE = Panoptes/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepunk.WebScreensaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepunk.Panoptes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -282,14 +282,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZA7XG7MLV7;
-				INFOPLIST_FILE = WebScreensaver/Info.plist;
+				INFOPLIST_FILE = Panoptes/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepunk.WebScreensaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarepunk.Panoptes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
@@ -299,7 +299,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFFBE1BC23B847B900519529 /* Build configuration list for PBXProject "WebScreensaver" */ = {
+		AFFBE1BC23B847B900519529 /* Build configuration list for PBXProject "Panoptes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFFBE1CA23B847B900519529 /* Debug */,
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFFBE1CC23B847B900519529 /* Build configuration list for PBXNativeTarget "WebScreensaver" */ = {
+		AFFBE1CC23B847B900519529 /* Build configuration list for PBXNativeTarget "Panoptes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFFBE1CD23B847B900519529 /* Debug */,

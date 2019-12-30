@@ -15,7 +15,7 @@ Panoptes can be configured from the command line.
 Get the List of URLs like this:
 
 ```console
-~ % defaults read ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver urls
+~ % defaults read ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes urls
 (
     "https://www.apple.com"
 )
@@ -25,7 +25,7 @@ Get the List of URLs like this:
 Set the list of URLs:
 
 ```console
-~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver urls -array "https://www.apple.com" "https://www.google.com" 
+~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes urls -array "https://www.apple.com" "https://www.google.com" 
 ~ %
 ```
 
@@ -36,7 +36,7 @@ The rotation interval is the time, in seconds, to display a URL before switching
 Get it like this:
 
 ```console
-~ % defaults read ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver intervalSecs
+~ % defaults read ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes intervalSecs
 60
 ~ %
 ```
@@ -44,7 +44,7 @@ Get it like this:
 Set it like this:
 
 ```console
-~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.WebScreensaver intervalSecs -float 30.0
+~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes intervalSecs -float 30.0
 ~ %
 ```
 

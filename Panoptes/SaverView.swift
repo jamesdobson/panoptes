@@ -57,7 +57,7 @@ extension SaverView {
 private extension SaverView {
 
   func configure() {
-    prefs = ScreenSaverDefaults(forModuleWithName: "com.softwarepunk.WebScreensaver")!
+    prefs = ScreenSaverDefaults(forModuleWithName: "com.softwarepunk.Panoptes")!
     
     if let urls = prefs?.stringArray(forKey: "urls") {
       urlArray = urls
