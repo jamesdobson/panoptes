@@ -20,3 +20,5 @@ deploy:
   draft: true
   on:
     repo: jamesdobson/panoptes
+    tags: true
+    branch: master
