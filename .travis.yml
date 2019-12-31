@@ -1,4 +1,4 @@
 language: swift
 osx_image: xcode11.3
-xcode_project: Panoptes.xcodeproj
-xcode_scheme: Panoptes
+
+script: set -o pipefail && xcodebuild -project Panoptes.xcodeproj -scheme Panoptes build | xcpretty
