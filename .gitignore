@@ -1,5 +1,6 @@
-# Created by https://www.gitignore.io/api/osx,xcode
-# Edit at https://www.gitignore.io/?templates=osx,xcode
+
+# Created by https://www.gitignore.io/api/osx,xcode,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=osx,xcode,visualstudiocode
 
 ### OSX ###
 # General
@@ -28,6 +29,17 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
 
 ### Xcode ###
 # Xcode
@@ -64,4 +76,6 @@ DerivedData/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/osx,xcode
+# End of https://www.gitignore.io/api/osx,xcode,visualstudiocode
+
+!.vscode/spellright.dict
