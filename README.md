@@ -1,5 +1,7 @@
 # Panoptes
 
+[![Build Status](https://travis-ci.org/jamesdobson/panoptes.svg?branch=master)](https://travis-ci.org/jamesdobson/panoptes)
+
 Panoptes is a mac screensaver that rotates through a set of webpages. Ideal for displaying monitoring dashboards as your screensaver.
 
 ## Configuration
@@ -25,7 +27,7 @@ Get the List of URLs like this:
 Set the list of URLs:
 
 ```console
-~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes urls -array "https://www.apple.com" "https://www.google.com" 
+~ % defaults write ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.softwarepunk.Panoptes urls -array "https://www.apple.com" "https://www.google.com"
 ~ %
 ```
 
@@ -51,4 +53,3 @@ Set it like this:
 ## License
 
 Licensed under the [MIT](https://github.com/jamesdobson/panoptes/blob/master/LICENSE) license.
-
