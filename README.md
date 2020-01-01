@@ -2,7 +2,17 @@
 
 [![Build Status](https://travis-ci.org/jamesdobson/panoptes.svg?branch=master)](https://travis-ci.org/jamesdobson/panoptes)
 
-Panoptes is a mac screensaver that rotates through a set of webpages. Ideal for displaying monitoring dashboards as your screensaver.
+Panoptes is a mac screensaver that rotates through a set of webpages. It's ideal
+for displaying status or system monitoring dashboards as your screensaver.
+
+## Installation
+
+Install from the [homebrew tap](https://github.com/jamesdobson/homebrew-panoptes):
+
+```console
+~ % brew tap jamesdobson/panoptes
+~ % brew cask install panoptes
+```
 
 ## Configuration
 
