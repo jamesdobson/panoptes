@@ -2,21 +2,22 @@ language: swift
 osx_image: xcode11.3
 
 before_script:
+  - go get github.com/magefile/mage
   - mkdir build
   - ./add-signing-cert.sh
 
-script: set -o pipefail && xcodebuild -project Panoptes.xcodeproj -scheme Panoptes -configuration Release -derivedDataPath build build | xcpretty
+script:
+  - mage -v build
 
 before_deploy:
-    - brew install p7zip
-    - cd build/Build/Products/Release
-    - 7z a -tzip -bb3 "${TRAVIS_BUILD_DIR}/Panoptes.saver.zip" Panoptes.saver
+  - mage -v notarize
+  - mage -v staple
 
 deploy:
   provider: releases
   api_key:
     secure: 0vNDVokWEvo8+fBtWgX0kF2x8fU7k2Y+cG+EZ5yke/SswIsraEN/0fa8bAdFyiWj67lQnc9LDUt6SRq0rra7wLK0cFSZB4OSeqPHLOx94CTXQoBOSC27VQVBTJdX9YIoj2BFcEvJNEPZtn/XaTYoV4Zp1ZbzFI1b4n/oI2VEl5Q0Dv7fZkgumr5ROb3O2RAsIU736H7nDU8m6VUarSKe74kXUP+K+D2+H3U2c5+Fi3KBszSsV4AW0VQdBMYDVfGsObhUrrgLXkLLcOUjzh9Xx3UrE1b94z7PMdjw6MB8a2AbSxc9ifK1LAlri1BlKEdun7PvQB+sFMrLdoSoDlGp56rnOwWoKE1U0qEunlO3DD/caxkzkqDj7MAYL8bEifHcVR0gWb93p80YHbXbgNHEJnK579491CofFy3i2gRhDYzaDsC+m3uDqRSDB2BUkQ9c02AyaI8Q37uoQ764roZ+u1jLZw+Z3rIr+ultCYm3JIbw61i0Z5bEaa2FsVHva6JcWTJ4Uluy8uNiEUUhdLZiQUL3VdM+WXcy9gN+TbDOwZi9amXjrX4V3inCv541iR4FH4slLMNU2ggkobdrjnaYseMeSdAkSv1x2pv2Q8BLgS/LeplQt8T2hiXW07FSZ2MM7cVaeWk6G7hLu/fwtVLtq2nx4iqljhQRmZ+oyNcKsq4=
-  file: "${TRAVIS_BUILD_DIR}/Panoptes.saver.zip"
+  file: "Panoptes.saver.zip"
   skip_cleanup: true
   draft: true
   on:
