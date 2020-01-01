@@ -5,6 +5,8 @@ before_script:
   - go get github.com/magefile/mage
   - mkdir build
   - ./add-signing-cert.sh
+  - /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $TRAVIS_BUILD_NUMBER" Panoptes/Info.plist
+  - if [[ "${TRAVIS_TAG}" == v* ]] ; then /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString ${TRAVIS_TAG:1}" Panoptes/Info.plist ; fi
 
 script:
   - "`go env GOPATH`/bin/mage -v build"
