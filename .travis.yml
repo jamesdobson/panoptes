@@ -7,11 +7,11 @@ before_script:
   - ./add-signing-cert.sh
 
 script:
-  - $GOPATH/bin/mage -v build
+  - `go env GOPATH`/bin/mage -v build
 
 before_deploy:
-  - $GOPATH/bin/mage -v notarize
-  - $GOPATH/bin/mage -v staple
+  - `go env GOPATH`/bin/mage -v notarize
+  - `go env GOPATH`/bin/mage -v staple
 
 deploy:
   provider: releases
